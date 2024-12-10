@@ -2,10 +2,11 @@ name: GitHub Actions Examen DIW
 
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
-on: [push]
+on: 
+  push: ['main']
 jobs:
   Examen1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.actor }}"
-      - run: echo "${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo " Mi Nombre es ${{ github.actor }}"
+      - run: echo " Mi rama es ${{ github.ref }} mi repositorio es ${{ github.repository }}."
