@@ -3,7 +3,8 @@ name: GitHub Actions Examen DIW
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on: 
-  push: ['main']
+  push: 
+    branches: ['main']
 jobs:
   Examen1:
     runs-on: ubuntu-latest
